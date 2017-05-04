@@ -11,7 +11,7 @@ MAIN PROC
     FOR:  
         INT 21H
         INC BL
-        CMP AL,0DH     ;compare al with newline to check if enter is pressed or not
+        CMP AL,0DH     ;compare al with carriage return to check if enter is pressed or not
         JE PRINT
         JMP FOR
         
